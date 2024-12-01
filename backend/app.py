@@ -8,7 +8,11 @@ app = Flask(__name__, static_folder='../frontend/build', static_url_path='')
 CORS(app)
 
 # Load product data from the JSON file
-with open('products.json', 'r') as file:
+# Get the absolute path to the current directory
+current_dir = os.path.dirname(os.path.abspath(__file__))
+
+# Load product data from the JSON file
+with open(os.path.join(current_dir, 'products.json'), 'r') as file:
     products = json.load(file)
 
 # Function to fetch current gold price
