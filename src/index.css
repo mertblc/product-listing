@@ -1,0 +1,117 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+  margin: 0;
+  padding: 0;
+}
+
+h1 {
+  text-align: center;
+  margin: 20px;
+}
+
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 10px;
+}
+
+.product-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 16px;
+  width: 250px; /* Adjust as needed */
+  height: 400px; /* Set a fixed height */
+  background-color: #fff;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  margin: auto;
+}
+
+
+.product-card img {
+  max-width: 100%;
+  height: 150px; /* Adjust as needed */
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+
+.color-picker {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.color-picker button {
+  cursor: pointer;
+  outline: none;
+}
+
+@font-face {
+  font-family: 'Avenir-Book';
+  src: url('/public/fonts/Avenir/Avenir-Book.ttf') format('opentype'); /* Root-relative path */
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Regular';
+  src: url('/public/fonts/Montserrat/Montserrat-Regular.ttf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Montserrat-Medium';
+  src: url('/public/fonts/Montserrat/Montserrat-Medium.otf') format('opentype');
+  font-weight: 500;
+  font-style: normal;
+}
+
+.slick-prev, .slick-next {
+  width: 50px; /* Increase arrow size */
+  height: 50px;
+  z-index: 2; /* Ensure arrows appear above the carousel */
+}
+
+.slick-prev:before, .slick-next:before {
+  font-size: 40px; /* Increase arrow icon size */
+  color: rgb(255, 87, 87); /* Arrow color */
+}
+
+.slick-prev {
+  left: -30px; /* Move left arrow closer to the carousel */
+  margin-left: 50px; /* Optional: Adjust arrow position */
+  background-color: #00ff04;
+}
+
+.slick-next {
+  right: -30px; /* Move right arrow closer to the carousel */
+  margin-right: 50px; /* Optional: Adjust arrow position */
+}
+
+.slick-prev:hover, .slick-next:hover {
+  color: #c9ce8d; /* Optional: Change arrow color on hover */
+  cursor: pointer;
+}
+
+h2 {
+  font-family: 'Montserrat-Medium', sans-serif;
+  font-size: 15px;
+}
+
+p {
+  font-family: 'Montserrat-Regular', sans-serif;
+  font-size: 15px;
+}
+
+.colorName {
+  font-family: 'Avenir-Book', sans-serif;
+  font-size: 12px;
+}
